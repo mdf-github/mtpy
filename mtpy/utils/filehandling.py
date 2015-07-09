@@ -1163,13 +1163,7 @@ def read_ts_header(tsfile):
     if not op.isfile(tsfile):
         raise MTex.MTpyError_inputarguments('Error - '
             'input file not existing: {0}'.format(tsfile))
-    tsfilesize = os.path.getsize(tsfile) 
-    if tsfilesize == 0:
-        raise MTex.MTpyError_file_handling('Error - '
-            '{0} is empty.{0}'.format(tsfile))
-    else:
-        print("tsfile has size {0}".format(tsfile))
-#end addition
+
     try:
         with open(tsfile,'r') as F:
             firstline =''

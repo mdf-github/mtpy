@@ -56,7 +56,6 @@ def main():
     orientation = False
 
     if len(sys.argv) > 3:
-        print("check1") #WE ARE HERE
         optionals = sys.argv[3:]
         for o in optionals:
             o = o.strip()
@@ -103,7 +102,6 @@ def main():
 
     #----------------------------------------------------------------------------
 
-    print("check2") #WE ARE HERE
     #select files by header entries:
     components = ['ex', 'ey', 'bx', 'by', 'bz']
     lo_allfiles = []
@@ -117,10 +115,8 @@ def main():
             continue    
         dirfiles = [op.abspath(op.join(wd,i)) for i in os.listdir(wd)]
         for tmpfile in dirfiles:
-            print(tmpfile) #WE ARE HERE
             try:
                 header = MTfh.read_ts_header(tmpfile)
-                print("got here") #WE ARE HERE
                 if header['channel'].lower() in components:
                     if stationname is not None:
                         if stationname.upper() != header['station'].upper():
@@ -129,7 +125,6 @@ def main():
                     lo_allfiles.append(op.abspath(op.join(wd,tmpfile)))
                     lo_allheaders.append(header)
             except:
-                print("check3") #WE ARE HERE
                 continue
 
     lo_allstations = list(set(lo_allstations))
@@ -144,6 +139,7 @@ def main():
     
     #1. generic calibration output directory
     cal_outdir = op.abspath(op.join(pathname[0],'calibrated'))
+
     if outdir is not None:
         try:
             cal_outdir = op.abspath(op.join(os.curdir,outdir))
