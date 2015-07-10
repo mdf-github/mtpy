@@ -35,24 +35,28 @@ def find_longest_common_time_window_from_list(lo_time_windows, sampling_rate):
             mins.append(minmaxtuple[0])
             maxs.append(minmaxtuple[1])
 
+    #earliest
     totalmin = np.min(mins)
+    #latest
     totalmax = np.max(maxs)
 
     #do not correct for last sample, since 'end' in the MTpy handling is defined as the start time of the last sample already
+    #think of totallength as tick marks for sampling time
     totallength = int((totalmax - totalmin ) * sampling_rate + 1)
     
 
     #define time axis:
-    ta = np.arange(totallength)/sampling_rate + totalmin
+    ta = np.arange(totallength)/sampling_rate + totalmin ##note that sampling rate is a float in birrp.py
 
-
+#UP TO THIS POINT IS CORRECT. We need to review the lines below.
     #set up array for 4/5 components
     d = np.zeros((totallength,len(lo_time_windows)))
-
+    #idx_ch is the index of the channel in lo_time_windows; recall that ch_list = [(starttime1, endtime1),(st2,et2)] = [(minmaxtuple1),(minmaxtuple2)]
     for idx_ch, ch_list in enumerate(lo_time_windows):
         for minmaxtuple in ch_list:
-            s = np.argmin(np.abs(ta-minmaxtuple[0]))
-            e = np.argmin(np.abs(ta-minmaxtuple[1]))+1
+            s = np.argmin(np.abs(ta-minmaxtuple[0])) ##gives the index of the starttime in the time axis ta
+                        ##we're looking for s=0
+            e = np.argmin(np.abs(ta-minmaxtuple[1]))+1 ##same here, we're looking for the "tick mark" of endtime
 
             #fill array with value 1 where data are available
             d[s:e,idx_ch] = 1
@@ -69,7 +73,7 @@ def find_longest_common_time_window_from_list(lo_time_windows, sampling_rate):
     print '\t\tMaximum time window covered by data files:', totalmax-totalmin 
 
     print '\t\tCheck data availablility - while-loop until "maximum time window" is reached...'
-    while t1 < totallength:
+    while t1 < totallength: ## for each tickmark, starting with t1=0
         if np.prod(d[t1,:]) == 0 :
             #check, if it's been a data window before
             if ts_tmp != None:
@@ -78,7 +82,9 @@ def find_longest_common_time_window_from_list(lo_time_windows, sampling_rate):
                 #get window length
                 window_length = te_tmp - ts_tmp
                 #check if it's been the longest window so far
+                print("\ntest2\n")
                 if window_length > longest_window:
+                    print("\ntest3\n")
                     longest_window = window_length
                     start_idx = ts_tmp
                     end_idx = te_tmp 
@@ -90,6 +96,7 @@ def find_longest_common_time_window_from_list(lo_time_windows, sampling_rate):
             continue
         #check if it's the first sample of a data window:
         if ts_tmp == None:
+            print("\ntest1\n")
             #if yes, initialise temporary variable
             ts_tmp = t1
             window_idx += 1
