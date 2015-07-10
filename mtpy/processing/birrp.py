@@ -169,7 +169,8 @@ def generate_birrp_inputstring_simple(stationname, rr_station, ts_directory,
                                         starttime=None, endtime=None):
 
     if not output_channels in [2,3]:
-        raise MTex.MTpyError_inputarguments( 'Output channels must be 2 or 3' )
+        ## raise MTex.MTpyError_inputarguments( 'Output channels must be 2 or 3' )
+        raise MTex.MTpyError_inputarguments( 'Output channels must be 2 or 3, currently {0}'.format(output_channels) )
 
 
     print '\nSetting basic input components,e.g. filenames, samplingrate,...\n'
