@@ -1159,12 +1159,12 @@ def read_ts_header(tsfile):
     header_dict = {}
 
     tsfile = op.abspath(tsfile)
-'''MY ADDITION'''
+#MY ADDITION
     tsfilesize = os.path.getsize(tsfile)
     if tsfilesize == 0:
         raise MTEx.MTpyError_file_handling('Error -'
             '{0} is empty'.format(tsfile))
-'''end'''
+#end my addition
     if not op.isfile(tsfile):
         raise MTex.MTpyError_inputarguments('Error - '
             'input file not existing: {0}'.format(tsfile))
