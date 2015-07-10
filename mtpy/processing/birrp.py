@@ -386,6 +386,7 @@ def set_birrp_input_file_simple(stationname, rr_station, ts_directory,
 
 
     #get a list with all existing time windows of consecutive data for all the channels
+    #includes remote station
     lo_time_windows = []
 
     #find sorting of the files by their start time:
@@ -404,7 +405,8 @@ def set_birrp_input_file_simple(stationname, rr_station, ts_directory,
             ch_read = lo_station_channels[sst]
             if not ch == ch_read:
                 continue
-
+            
+            #evaluate Nyquist condition
             if tmp_starttime != None:
                 if (tmp_endtime != None) and (np.abs(lo_station_starttimes[sst] - tmp_endtime) > 0.5*1./sampling_rate):
                     tmp_timewindows_list_per_channel.append((tmp_starttime, tmp_endtime))
@@ -416,6 +418,7 @@ def set_birrp_input_file_simple(stationname, rr_station, ts_directory,
         if tmp_starttime != None:
             tmp_timewindows_list_per_channel.append((tmp_starttime, tmp_endtime))
 
+        #only time intervals those that obey the Nyquist condition will be included in lo_time_windows
         lo_time_windows.append(tmp_timewindows_list_per_channel)
 
     if rr_station is not None:
