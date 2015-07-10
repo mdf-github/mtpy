@@ -117,7 +117,10 @@ def find_longest_common_time_window_from_list(lo_time_windows, sampling_rate):
     #                     round(ta[end_idx], precision), window_length#, len(ta))
     
 
-    window_length = (round(ta[end_idx], precision) - round(ta[start_idx], precision)) *sampling_rate
+    try:
+        window_length = (round(ta[end_idx], precision) - round(ta[start_idx], precision)) *sampling_rate
+    except:
+        raise TypeError('rounding numbers = {0}, {1} not possible?'.format(ta[end_idx],ta[start_idx])
     
     return (round(ta[start_idx], precision), round(ta[end_idx], precision), window_length)
 
