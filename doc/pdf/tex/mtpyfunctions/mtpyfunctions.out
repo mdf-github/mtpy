@@ -1,0 +1,179 @@
+\BOOKMARK [0][-]{chapter.1}{Structure}{}% 1
+\BOOKMARK [1][-]{section.1.1}{overview}{chapter.1}% 2
+\BOOKMARK [1][-]{section.1.2}{subpackages}{chapter.1}% 3
+\BOOKMARK [1][-]{section.1.3}{command line scripts}{chapter.1}% 4
+\BOOKMARK [0][-]{chapter.2}{core}{}% 5
+\BOOKMARK [1][-]{section.2.1}{z}{chapter.2}% 6
+\BOOKMARK [2][-]{subsection.2.1.1}{Edi \(Class\)}{section.2.1}% 7
+\BOOKMARK [2][-]{subsection.2.1.2}{Z \(Class\)}{section.2.1}% 8
+\BOOKMARK [2][-]{subsection.2.1.3}{PhaseTensor \(Class\)}{section.2.1}% 9
+\BOOKMARK [2][-]{subsection.2.1.4}{ResPhase \(Class\)}{section.2.1}% 10
+\BOOKMARK [2][-]{subsection.2.1.5}{Tipper \(Class\)}{section.2.1}% 11
+\BOOKMARK [2][-]{subsection.2.1.6}{Zinvariants \(Class\)}{section.2.1}% 12
+\BOOKMARK [2][-]{subsection.2.1.7}{ResistivityTensor \(Class\)}{section.2.1}% 13
+\BOOKMARK [2][-]{subsection.2.1.8}{PhaseTensorResidual \(Class\)}{section.2.1}% 14
+\BOOKMARK [2][-]{subsection.2.1.9}{ResistivityTensorResidual \(Class\)}{section.2.1}% 15
+\BOOKMARK [1][-]{section.2.2}{mttools}{chapter.2}% 16
+\BOOKMARK [2][-]{subsection.2.2.1}{convertlpB \(Function\)}{section.2.2}% 17
+\BOOKMARK [2][-]{subsection.2.2.2}{convertE \(Function\)}{section.2.2}% 18
+\BOOKMARK [2][-]{subsection.2.2.3}{rotateE \(Function\)}{section.2.2}% 19
+\BOOKMARK [2][-]{subsection.2.2.4}{rotateB \(Function\)}{section.2.2}% 20
+\BOOKMARK [2][-]{subsection.2.2.5}{padzeros \(Function\)}{section.2.2}% 21
+\BOOKMARK [2][-]{subsection.2.2.6}{filter \(Function\)}{section.2.2}% 22
+\BOOKMARK [2][-]{subsection.2.2.7}{dctrend \(Function\)}{section.2.2}% 23
+\BOOKMARK [2][-]{subsection.2.2.8}{normalizeL2 \(Function\)}{section.2.2}% 24
+\BOOKMARK [2][-]{subsection.2.2.9}{decimatef \(Function\)}{section.2.2}% 25
+\BOOKMARK [2][-]{subsection.2.2.10}{openMTfile \(Function\)}{section.2.2}% 26
+\BOOKMARK [2][-]{subsection.2.2.11}{convertCounts2Units \(Function\)}{section.2.2}% 27
+\BOOKMARK [2][-]{subsection.2.2.12}{combineFewFiles \(Function\)}{section.2.2}% 28
+\BOOKMARK [2][-]{subsection.2.2.13}{combineFiles \(Function\)}{section.2.2}% 29
+\BOOKMARK [2][-]{subsection.2.2.14}{adaptiveNotchFilter \(Function\)}{section.2.2}% 30
+\BOOKMARK [2][-]{subsection.2.2.15}{removePeriodicNoise \(Function\)}{section.2.2}% 31
+\BOOKMARK [2][-]{subsection.2.2.16}{imp2resphase \(Function\)}{section.2.2}% 32
+\BOOKMARK [2][-]{subsection.2.2.17}{sigfigs \(Function\)}{section.2.2}% 33
+\BOOKMARK [2][-]{subsection.2.2.18}{writeedi \(Function\)}{section.2.2}% 34
+\BOOKMARK [2][-]{subsection.2.2.19}{rewriteedi \(Function\)}{section.2.2}% 35
+\BOOKMARK [2][-]{subsection.2.2.20}{getnum \(Function\)}{section.2.2}% 36
+\BOOKMARK [2][-]{subsection.2.2.21}{readedi \(Function\)}{section.2.2}% 37
+\BOOKMARK [2][-]{subsection.2.2.22}{combineEdifiles \(Function\)}{section.2.2}% 38
+\BOOKMARK [2][-]{subsection.2.2.23}{sil \(Function\)}{section.2.2}% 39
+\BOOKMARK [2][-]{subsection.2.2.24}{readStationInfo \(Function\)}{section.2.2}% 40
+\BOOKMARK [2][-]{subsection.2.2.25}{getStationInfo \(Function\)}{section.2.2}% 41
+\BOOKMARK [2][-]{subsection.2.2.26}{convertfiles \(Function\)}{section.2.2}% 42
+\BOOKMARK [2][-]{subsection.2.2.27}{removeStaticShift \(Function\)}{section.2.2}% 43
+\BOOKMARK [2][-]{subsection.2.2.28}{makeDayFoldersFromObservatoryData \(Function\)}{section.2.2}% 44
+\BOOKMARK [2][-]{subsection.2.2.29}{makeKML \(Function\)}{section.2.2}% 45
+\BOOKMARK [2][-]{subsection.2.2.30}{getPeriods \(Function\)}{section.2.2}% 46
+\BOOKMARK [0][-]{chapter.3}{imaging}{}% 47
+\BOOKMARK [1][-]{section.3.1}{mtplottools}{chapter.3}% 48
+\BOOKMARK [2][-]{subsection.3.1.1}{plotcoh \(Function\)}{section.3.1}% 49
+\BOOKMARK [2][-]{subsection.3.1.2}{plotResPhase \(Function\)}{section.3.1}% 50
+\BOOKMARK [2][-]{subsection.3.1.3}{resPhasePlots \(Function\)}{section.3.1}% 51
+\BOOKMARK [2][-]{subsection.3.1.4}{plotTSplotTipper \(Function\)}{section.3.1}% 52
+\BOOKMARK [2][-]{subsection.3.1.5}{plotTS \(Function\)}{section.3.1}% 53
+\BOOKMARK [2][-]{subsection.3.1.6}{plotPTpseudoSection \(Function\)}{section.3.1}% 54
+\BOOKMARK [2][-]{subsection.3.1.7}{plotRTpseudoSection \(Function\)}{section.3.1}% 55
+\BOOKMARK [2][-]{subsection.3.1.8}{plotPTMaps \(Function\)}{section.3.1}% 56
+\BOOKMARK [2][-]{subsection.3.1.9}{plotResPhasePseudoSection \(Function\)}{section.3.1}% 57
+\BOOKMARK [2][-]{subsection.3.1.10}{plotRTMaps \(Function\)}{section.3.1}% 58
+\BOOKMARK [2][-]{subsection.3.1.11}{plotRoseStrikeAngles \(Function\)}{section.3.1}% 59
+\BOOKMARK [1][-]{section.3.2}{ptplots}{chapter.3}% 60
+\BOOKMARK [2][-]{subsection.3.2.1}{ptplots \(Class\)}{section.3.2}% 61
+\BOOKMARK [0][-]{chapter.4}{modeling}{}% 62
+\BOOKMARK [1][-]{section.4.1}{modemtools}{chapter.4}% 63
+\BOOKMARK [2][-]{subsection.4.1.1}{winglinkmesh2modelfile \(Function\)}{section.4.1}% 64
+\BOOKMARK [2][-]{subsection.4.1.2}{latlon2xy \(Function\)}{section.4.1}% 65
+\BOOKMARK [2][-]{subsection.4.1.3}{edis2datafile \(Function\)}{section.4.1}% 66
+\BOOKMARK [2][-]{subsection.4.1.4}{generate\137edilist \(Function\)}{section.4.1}% 67
+\BOOKMARK [2][-]{subsection.4.1.5}{winglink2modem \(Function\)}{section.4.1}% 68
+\BOOKMARK [2][-]{subsection.4.1.6}{wsinv2modem\137data \(Function\)}{section.4.1}% 69
+\BOOKMARK [2][-]{subsection.4.1.7}{wsinv2modem\137model \(Function\)}{section.4.1}% 70
+\BOOKMARK [2][-]{subsection.4.1.8}{plotmodel3d \(Function\)}{section.4.1}% 71
+\BOOKMARK [2][-]{subsection.4.1.9}{getmeshblockcoordinates \(Function\)}{section.4.1}% 72
+\BOOKMARK [1][-]{section.4.2}{occamtools}{chapter.4}% 73
+\BOOKMARK [2][-]{subsection.4.2.1}{Occam1D \(Class\)}{section.4.2}% 74
+\BOOKMARK [2][-]{subsection.4.2.2}{getdatetime \(Function\)}{section.4.2}% 75
+\BOOKMARK [2][-]{subsection.4.2.3}{makestartfiles \(Function\)}{section.4.2}% 76
+\BOOKMARK [2][-]{subsection.4.2.4}{writemeshfile \(Function\)}{section.4.2}% 77
+\BOOKMARK [2][-]{subsection.4.2.5}{writemodelfile \(Function\)}{section.4.2}% 78
+\BOOKMARK [2][-]{subsection.4.2.6}{writestartupfile \(Function\)}{section.4.2}% 79
+\BOOKMARK [2][-]{subsection.4.2.7}{read\137datafile \(Function\)}{section.4.2}% 80
+\BOOKMARK [2][-]{subsection.4.2.8}{get\137model\137setup \(Function\)}{section.4.2}% 81
+\BOOKMARK [2][-]{subsection.4.2.9}{blocks\137elements\137setup \(Function\)}{section.4.2}% 82
+\BOOKMARK [2][-]{subsection.4.2.10}{OccamPointPicker \(Class\)}{section.4.2}% 83
+\BOOKMARK [2][-]{subsection.4.2.11}{Occam2DData \(Class\)}{section.4.2}% 84
+\BOOKMARK [2][-]{subsection.4.2.12}{Occam2DModel \(Class\)}{section.4.2}% 85
+\BOOKMARK [2][-]{subsection.4.2.13}{compare2DIter \(Function\)}{section.4.2}% 86
+\BOOKMARK [1][-]{section.4.3}{winglinktools}{chapter.4}% 87
+\BOOKMARK [2][-]{subsection.4.3.1}{readOutputFile \(Function\)}{section.4.3}% 88
+\BOOKMARK [2][-]{subsection.4.3.2}{plotResponses \(Function\)}{section.4.3}% 89
+\BOOKMARK [2][-]{subsection.4.3.3}{readModelFile \(Function\)}{section.4.3}% 90
+\BOOKMARK [2][-]{subsection.4.3.4}{readWLOutFile \(Function\)}{section.4.3}% 91
+\BOOKMARK [2][-]{subsection.4.3.5}{readSitesFile \(Function\)}{section.4.3}% 92
+\BOOKMARK [2][-]{subsection.4.3.6}{readSitesFile2 \(Function\)}{section.4.3}% 93
+\BOOKMARK [2][-]{subsection.4.3.7}{getXY \(Function\)}{section.4.3}% 94
+\BOOKMARK [2][-]{subsection.4.3.8}{getmeshblockcoordinates \(Function\)}{section.4.3}% 95
+\BOOKMARK [1][-]{section.4.4}{ws3dtools}{chapter.4}% 96
+\BOOKMARK [2][-]{subsection.4.4.1}{ListPeriods \(Class\)}{section.4.4}% 97
+\BOOKMARK [2][-]{subsection.4.4.2}{writeWSDataFile \(Function\)}{section.4.4}% 98
+\BOOKMARK [2][-]{subsection.4.4.3}{writeInit3DFile \(Function\)}{section.4.4}% 99
+\BOOKMARK [2][-]{subsection.4.4.4}{writeStartupFile \(Function\)}{section.4.4}% 100
+\BOOKMARK [2][-]{subsection.4.4.5}{readDataFile \(Function\)}{section.4.4}% 101
+\BOOKMARK [2][-]{subsection.4.4.6}{plotDataResPhase \(Function\)}{section.4.4}% 102
+\BOOKMARK [2][-]{subsection.4.4.7}{plotTensorMaps \(Function\)}{section.4.4}% 103
+\BOOKMARK [2][-]{subsection.4.4.8}{readModelFile \(Function\)}{section.4.4}% 104
+\BOOKMARK [0][-]{chapter.5}{processing}{}% 105
+\BOOKMARK [1][-]{section.5.1}{birrptools}{chapter.5}% 106
+\BOOKMARK [2][-]{subsection.5.1.1}{finishBeep \(Function\)}{section.5.1}% 107
+\BOOKMARK [2][-]{subsection.5.1.2}{readProDict \(Function\)}{section.5.1}% 108
+\BOOKMARK [2][-]{subsection.5.1.3}{scriptfilePrep \(Function\)}{section.5.1}% 109
+\BOOKMARK [2][-]{subsection.5.1.4}{writeScriptfile \(Function\)}{section.5.1}% 110
+\BOOKMARK [2][-]{subsection.5.1.5}{callBIRRP \(Function\)}{section.5.1}% 111
+\BOOKMARK [2][-]{subsection.5.1.6}{convertBIRRPoutputs \(Function\)}{section.5.1}% 112
+\BOOKMARK [2][-]{subsection.5.1.7}{plotBFfiles \(Function\)}{section.5.1}% 113
+\BOOKMARK [2][-]{subsection.5.1.8}{writeLogfile \(Function\)}{section.5.1}% 114
+\BOOKMARK [2][-]{subsection.5.1.9}{runBIRRPpp \(Function\)}{section.5.1}% 115
+\BOOKMARK [2][-]{subsection.5.1.10}{sigfigs \(Function\)}{section.5.1}% 116
+\BOOKMARK [2][-]{subsection.5.1.11}{sil \(Function\)}{section.5.1}% 117
+\BOOKMARK [2][-]{subsection.5.1.12}{read2c2 \(Function\)}{section.5.1}% 118
+\BOOKMARK [2][-]{subsection.5.1.13}{writecoh \(Function\)}{section.5.1}% 119
+\BOOKMARK [2][-]{subsection.5.1.14}{readcoh \(Function\)}{section.5.1}% 120
+\BOOKMARK [2][-]{subsection.5.1.15}{bbcalfunc \(Function\)}{section.5.1}% 121
+\BOOKMARK [2][-]{subsection.5.1.16}{readj \(Function\)}{section.5.1}% 122
+\BOOKMARK [2][-]{subsection.5.1.17}{readrf \(Function\)}{section.5.1}% 123
+\BOOKMARK [2][-]{subsection.5.1.18}{bbconvz \(Function\)}{section.5.1}% 124
+\BOOKMARK [2][-]{subsection.5.1.19}{lpconvz \(Function\)}{section.5.1}% 125
+\BOOKMARK [2][-]{subsection.5.1.20}{writeimp \(Function\)}{section.5.1}% 126
+\BOOKMARK [2][-]{subsection.5.1.21}{readimp \(Function\)}{section.5.1}% 127
+\BOOKMARK [2][-]{subsection.5.1.22}{writedat \(Function\)}{section.5.1}% 128
+\BOOKMARK [2][-]{subsection.5.1.23}{readdat \(Function\)}{section.5.1}% 129
+\BOOKMARK [2][-]{subsection.5.1.24}{writeedi \(Function\)}{section.5.1}% 130
+\BOOKMARK [2][-]{subsection.5.1.25}{readini \(Function\)}{section.5.1}% 131
+\BOOKMARK [2][-]{subsection.5.1.26}{writeini \(Function\)}{section.5.1}% 132
+\BOOKMARK [1][-]{section.5.2}{runbirrpsinglestation \(Script\)}{chapter.5}% 133
+\BOOKMARK [1][-]{section.5.3}{striketools}{chapter.5}% 134
+\BOOKMARK [2][-]{subsection.5.3.1}{Strike \(Class\)}{section.5.3}% 135
+\BOOKMARK [1][-]{section.5.4}{tftools}{chapter.5}% 136
+\BOOKMARK [2][-]{subsection.5.4.1}{padzeros \(Function\)}{section.5.4}% 137
+\BOOKMARK [2][-]{subsection.5.4.2}{sfilter \(Function\)}{section.5.4}% 138
+\BOOKMARK [2][-]{subsection.5.4.3}{dctrend \(Function\)}{section.5.4}% 139
+\BOOKMARK [2][-]{subsection.5.4.4}{normalizeL2 \(Function\)}{section.5.4}% 140
+\BOOKMARK [2][-]{subsection.5.4.5}{decimatef \(Function\)}{section.5.4}% 141
+\BOOKMARK [2][-]{subsection.5.4.6}{dwindow \(Function\)}{section.5.4}% 142
+\BOOKMARK [2][-]{subsection.5.4.7}{gausswin \(Function\)}{section.5.4}% 143
+\BOOKMARK [2][-]{subsection.5.4.8}{wvdas \(Function\)}{section.5.4}% 144
+\BOOKMARK [2][-]{subsection.5.4.9}{stft \(Function\)}{section.5.4}% 145
+\BOOKMARK [2][-]{subsection.5.4.10}{reassignedstft \(Function\)}{section.5.4}% 146
+\BOOKMARK [2][-]{subsection.5.4.11}{wvd \(Function\)}{section.5.4}% 147
+\BOOKMARK [2][-]{subsection.5.4.12}{spwvd \(Function\)}{section.5.4}% 148
+\BOOKMARK [2][-]{subsection.5.4.13}{robustwvd \(Function\)}{section.5.4}% 149
+\BOOKMARK [2][-]{subsection.5.4.14}{specwv \(Function\)}{section.5.4}% 150
+\BOOKMARK [2][-]{subsection.5.4.15}{modifiedb \(Function\)}{section.5.4}% 151
+\BOOKMARK [2][-]{subsection.5.4.16}{robuststftMedian \(Function\)}{section.5.4}% 152
+\BOOKMARK [2][-]{subsection.5.4.17}{robuststftL \(Function\)}{section.5.4}% 153
+\BOOKMARK [2][-]{subsection.5.4.18}{smethod \(Function\)}{section.5.4}% 154
+\BOOKMARK [2][-]{subsection.5.4.19}{robustSmethod \(Function\)}{section.5.4}% 155
+\BOOKMARK [2][-]{subsection.5.4.20}{reassignedSmethod \(Function\)}{section.5.4}% 156
+\BOOKMARK [2][-]{subsection.5.4.21}{plottf \(Function\)}{section.5.4}% 157
+\BOOKMARK [2][-]{subsection.5.4.22}{plotAll \(Function\)}{section.5.4}% 158
+\BOOKMARK [2][-]{subsection.5.4.23}{stfbss \(Function\)}{section.5.4}% 159
+\BOOKMARK [0][-]{chapter.6}{utils}{}% 160
+\BOOKMARK [1][-]{section.6.1}{combineedis \(Script\)}{chapter.6}% 161
+\BOOKMARK [1][-]{section.6.2}{csvutm \(Script\)}{chapter.6}% 162
+\BOOKMARK [2][-]{subsection.6.2.1}{csvutm \(Function\)}{section.6.2}% 163
+\BOOKMARK [2][-]{subsection.6.2.2}{get\137parser \(Function\)}{section.6.2}% 164
+\BOOKMARK [1][-]{section.6.3}{edidms2deg \(Script\)}{chapter.6}% 165
+\BOOKMARK [2][-]{subsection.6.3.1}{dms2deg \(Function\)}{section.6.3}% 166
+\BOOKMARK [2][-]{subsection.6.3.2}{deg2dms \(Function\)}{section.6.3}% 167
+\BOOKMARK [2][-]{subsection.6.3.3}{check\137format \(Function\)}{section.6.3}% 168
+\BOOKMARK [2][-]{subsection.6.3.4}{edidms2deg \(Function\)}{section.6.3}% 169
+\BOOKMARK [1][-]{section.6.4}{latlongutmconversion \(Script\)}{chapter.6}% 170
+\BOOKMARK [2][-]{subsection.6.4.1}{LLtoUTM \(Function\)}{section.6.4}% 171
+\BOOKMARK [2][-]{subsection.6.4.2}{UTMtoLL \(Function\)}{section.6.4}% 172
+\BOOKMARK [1][-]{section.6.5}{modem2vtk3d}{chapter.6}% 173
+\BOOKMARK [2][-]{subsection.6.5.1}{model2vtkgrid \(Function\)}{section.6.5}% 174
+\BOOKMARK [2][-]{subsection.6.5.2}{data2vtkstationsgrid \(Function\)}{section.6.5}% 175
+\BOOKMARK [1][-]{section.6.6}{pakasc2TSasc \(Script\)}{chapter.6}% 176
+\BOOKMARK [2][-]{subsection.6.6.1}{pakascii2TSascii \(Function\)}{section.6.6}% 177
+\BOOKMARK [1][-]{section.6.7}{runparalanamt \(Script\)}{chapter.6}% 178
+\BOOKMARK [1][-]{section.6.8}{ws2para \(Script\)}{chapter.6}% 179
